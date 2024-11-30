@@ -2,14 +2,14 @@ Setup application
 git clone https://github.com/azharjustin/Task-manager-Repo.git
 
 Frontend
-cd task-manager-app
-npm install
-npm run dev
+1. cd task-manager-app
+2. npm install
+3. npm run dev
 
 Backend
-cd backend
-npm install
-npm run dev
+1. cd backend
+2. npm install
+3. npm run dev
 
 env file
 uri = use your mongodb uri
