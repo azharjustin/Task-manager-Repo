@@ -8,7 +8,7 @@ const GoogleSignup = () => {
       try {
          const { tokenId } = response;
          console.log("token ifd--------------", response, tokenId)
-         const res = await axios.post('http://localhost:8000/api/auth/google', { token: tokenId });
+         const res = await axios.post('https://task-manager-repo.onrender.com/api/auth/google', { token: tokenId });
 
          if (res.status === 200) {
             toast.success('Signed in with Google successfully!');

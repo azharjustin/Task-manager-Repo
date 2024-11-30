@@ -121,13 +121,13 @@ const Dashboard = () => {
       try {
 
          if (isCreate) {
-            const createTask = await axios.post(`http://localhost:8000/api/task/create`, {
+            const createTask = await axios.post(`https://task-manager-repo.onrender.com/api/task/create`, {
                title,
                description
             })
             toast.success(createTask.data.message)
          } else {
-            const createTask = await axios.put(`http://localhost:8000/api/task/update/${taskId}`, {
+            const createTask = await axios.put(`https://task-manager-repo.onrender.com/api/task/update/${taskId}`, {
                title,
                description,
                status
@@ -148,7 +148,7 @@ const Dashboard = () => {
 
    const getAllTask = async () => {
       try {
-         const taskData = await axios.get(`http://localhost:8000/api/task/getall`,{
+         const taskData = await axios.get(`https://task-manager-repo.onrender.com/api/task/getall`,{
             params: {
             search: searchQuery, 
             sort: option,  
@@ -172,7 +172,7 @@ const Dashboard = () => {
    
    const deleteConfirm = async() => {
       try {
-         const deleteData = await axios.delete(`http://localhost:8000/api/task/delete/${taskId}`)
+         const deleteData = await axios.delete(`https://task-manager-repo.onrender.com/api/task/delete/${taskId}`)
          console.log("taskId----------", taskId, deleteData)
          if (deleteData.data) {
             toast.success(deleteData.data.message)

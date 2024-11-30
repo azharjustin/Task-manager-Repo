@@ -80,7 +80,7 @@ const SignUp = () => {
       if (!isFormValid) return;
       try {
    
-         const signupUser = await axios.post(`http://localhost:8000/api/auth/signup`,
+         const signupUser = await axios.post(`https://task-manager-repo.onrender.com/api/auth/signup`,
             {
                first_name: firstName, 
                last_name: lastName,
