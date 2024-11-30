@@ -1,0 +1,17 @@
+
+.loginLayout{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* .select{
+  width: min-content;
+}
+
+.MuiPaper-root {
+  width: 100%;
+} */
